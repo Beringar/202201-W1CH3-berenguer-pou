@@ -59,6 +59,12 @@ main {
   margin: 1rem 0 1.2rem;
 }
 
+.header__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .activities__title {
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -123,4 +129,52 @@ main {
   grid-area: card;
   width: 100%;
   border-radius: 0.9rem;
+}
+
+@media (min-width: 721px) {
+  html {
+    font-size: 32px;
+  }
+  .activities__header {
+    flex-direction: row;
+
+    margin: 1rem 0 1.2rem;
+    justify-content: space-between;
+  }
+
+  .header__text {
+    align-items: flex-start;
+  }
+
+  .activity__card {
+    width: 31.5%;
+  }
+
+  .activities__container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .activity__card-text {
+    justify-content: center;
+    padding: 0;
+    opacity: 0;
+    background-color: #00000075;
+    border-radius: 0.9rem;
+  }
+
+  .activity__card-text:hover {
+    opacity: 1;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+
+  .activity__image {
+    object-fit: cover;
+    height: 14rem;
+  }
 }
