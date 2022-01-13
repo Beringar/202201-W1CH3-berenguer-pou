@@ -32,7 +32,7 @@ main {
 .navigation__container {
 }
 
-#menuToggle span {
+.navigation__menu-toggle span {
   display: block;
   width: 1.6rem;
   height: 0.2rem;
@@ -47,9 +47,13 @@ main {
 }
 
 .navigation__menu-item {
+  font-size: 0.7rem;
+  padding: 0 1rem;
 }
 
-.navigation__menu-button {
+.button--menu {
+  color: #ec6435;
+  background-color: #ffffff;
 }
 
 .activities__header {
@@ -57,6 +61,12 @@ main {
   flex-direction: column;
   align-items: center;
   margin: 1rem 0 1.2rem;
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .activities__title {
@@ -72,16 +82,24 @@ main {
   margin: 0.3rem 0 1.4rem;
 }
 
-.activities__button {
+.button {
   font-family: inherit;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #ec6435;
-  border: none;
+  border: 0.15rem solid #ec6435;
   font-size: 0.6rem;
   font-weight: 600;
   padding: 0.5rem 0.8rem;
   border-radius: 0 0.9rem 0.9rem 0.9rem;
+  transition: all 0.5s ease;
+}
+
+.button:hover {
+  transition: all 0.5s ease;
+}
+
+.button--activities {
+  color: #ffffff;
+  background-color: #ec6435;
 }
 
 .activities__container {
@@ -123,4 +141,73 @@ main {
   grid-area: card;
   width: 100%;
   border-radius: 0.9rem;
+}
+
+@media (min-width: 721px) {
+  html {
+    font-size: 32px;
+  }
+  .activities__header {
+    flex-direction: row;
+
+    margin: 1rem 0 1.2rem;
+    justify-content: space-between;
+  }
+
+  .header__text {
+    align-items: flex-start;
+  }
+
+  .activity__card {
+    width: 31.5%;
+  }
+
+  .activities__container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .activity__card-text {
+    justify-content: center;
+    padding: 0;
+    opacity: 0;
+    background-color: #00000075;
+    border-radius: 0.9rem;
+  }
+
+  .activity__card-text:hover {
+    opacity: 1;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+
+  .activity__image {
+    object-fit: cover;
+    height: 14rem;
+  }
+
+  .button--activities:hover {
+    color: #ec6435;
+    background-color: #ffffff;
+  }
+
+  .button--menu:hover {
+    color: #ffffff;
+    background-color: #ec6435;
+  }
+
+  .navigation__menu-toggle {
+    display: none;
+  }
+
+  .navigation__menu {
+    display: flex;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+  }
 }
