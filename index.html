@@ -22,10 +22,26 @@
           <span></span>
           <span></span>
         </div>
-        <ul class="navigation__menu">
-          <li class="navigation__menu-item">Home</li>
-          <li class="navigation__menu-item">Live Demo</li>
-          <li class="navigation__menu-item">Live Demo Blocks</li>
+        <ul role="navigation" class="navigation__menu">
+          <li class="navigation__menu-item">
+            <a href="#" class="link--no-childs">Home</a>
+          </li>
+          <li class="navigation__menu-item">
+            <a href="#">Live Demo</a>
+            <ul class="dropdown">
+              <li><a href="#" class="link--no-childs">Sub-1</a></li>
+              <li><a href="#" class="link--no-childs">Sub-2</a></li>
+              <li><a href="#" class="link--no-childs">Sub-3</a></li>
+            </ul>
+          </li>
+          <li class="navigation__menu-item">
+            <a href="#">Live Demo Blocks</a>
+            <ul class="dropdown">
+              <li><a href="#" class="link--no-childs">Sub-1</a></li>
+              <li><a href="#" class="link--no-childs">Sub-2</a></li>
+              <li><a href="#" class="link--no-childs">Sub-3</a></li>
+            </ul>
+          </li>
           <li class="navigation__menu-item">
             <button class="button button--menu">Buy now</button>
           </li>
