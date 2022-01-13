@@ -1,28 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
 }
 
-header {
+html {
+  font-family: "Nunito", sans-serif;
+}
+
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   border-top: 2px solid #000000;
   box-shadow: 0px 4px 10px rgb(0 0 0 / 20%);
 }
 
 main {
+  padding: 0 2.2rem 3rem;
 }
 
 .logo__container {
 }
 
 .logo__image {
-  width: 60px;
+  width: 2rem;
 }
 
 .navigation__container {
+}
+
+#menuToggle span {
+  display: block;
+  width: 1.6rem;
+  height: 0.2rem;
+  margin-bottom: 5px;
+  background: #858585;
+  border-radius: 3px;
+  z-index: 1;
 }
 
 .navigation__menu {
@@ -39,15 +56,32 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1rem 0 1.2rem;
 }
 
 .activities__title {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #ec6435;
+  font-weight: 600;
 }
 
 .activities__subtitle {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0.3rem 0 1.4rem;
 }
 
 .activities__button {
+  font-family: inherit;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ec6435;
+  border: none;
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0 0.9rem 0.9rem 0.9rem;
 }
 
 .activities__container {
@@ -62,6 +96,7 @@ main {
   grid-template-areas:
     "card"
     "card";
+  margin: 0.6rem 0 0.6rem;
 }
 
 .activity__card-text {
@@ -71,28 +106,21 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  color: #ffffff;
+  padding: 0 0 0.8rem;
 }
 
 .activity__category {
+  text-transform: uppercase;
+  font-size: 0.6rem;
 }
 
 .activity__title {
+  font-size: 0.9rem;
 }
 
 .activity__image {
   grid-area: card;
   width: 100%;
-}
-
-#menuToggle {
-}
-
-#menuToggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  background: #858585;
-  border-radius: 3px;
-  z-index: 1;
+  border-radius: 0.9rem;
 }
