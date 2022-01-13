@@ -30,14 +30,8 @@ main {
   padding: 0 2.2rem 3rem;
 }
 
-.logo__container {
-}
-
 .logo__image {
   width: 2rem;
-}
-
-.navigation__container {
 }
 
 .navigation__menu-toggle span {
@@ -77,10 +71,6 @@ navigation__menu-item:focus-within {
   outline: none;
 }
 
-.navigation__menu-item ul {
-  list-style-type: none;
-}
-
 .navigation__menu-item > a:after {
   content: "";
   position: absolute;
@@ -100,16 +90,17 @@ navigation__menu-item:focus-within {
 }
 
 .navigation__menu-item ul {
+  list-style-type: none;
   visibility: hidden;
   opacity: 0;
-  top: 2.3rem;
+  top: 0;
   position: absolute;
   transition: all 0.5s ease;
   left: 0;
   display: none;
-}
-
-.navigation__menu-item:hover {
+  width: max-content;
+  background-color: transparent;
+  padding-top: 2.3rem;
 }
 
 .navigation__menu-item:hover > ul,
@@ -124,6 +115,19 @@ navigation__menu-item:focus-within {
 .navigation__menu-item ul li {
   clear: both;
   width: 100%;
+  background-color: #ffffff;
+  padding: 0.1rem 0.2rem 0.5rem 0.5rem;
+  border-bottom: 0.1rem solid #ccc;
+  border-right: 1px solid rgba(204, 204, 204, 0.153);
+}
+
+.navigation__menu-item ul li a {
+  transition: all 0.4s ease;
+}
+
+.navigation__menu-item ul li a:hover {
+  color: #ec6435;
+  transition: all 0.4s ease;
 }
 
 .activities__header {
