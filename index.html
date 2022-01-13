@@ -8,7 +8,7 @@
     <title>Pet Activities</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="logo__container">
         <img
           src="assets/logo2.png"
@@ -33,32 +33,38 @@
       </nav>
     </header>
     <main>
-      <section class="activities__header">
+      <header class="activities__header">
         <h1 class="activities__title">Pet activities</h1>
         <p class="activities__subtitle">Take a closer look</p>
         <button class="activities__button">View all</button>
-      </section>
-      <section class="activities__container">
-        <card class="activity">
-          <p class="activity__category">Activities</p>
-          <h2 class="activity__title">Toys playtime</h2>
+      </header>
+      <div class="activities__container">
+        <article class="activity__card">
+          <section class="activity__card-text">
+            <p class="activity__category">Activities</p>
+            <h2 class="activity__title">Toys playtime</h2>
+          </section>
           <img
             src="assets/01.jpg"
             alt="Toys Playtime"
             class="activity__image"
           />
-        </card>
-        <card class="activity">
-          <p class="activity__category">Activities</p>
-          <h2 class="activity__title">Active rest</h2>
+        </article>
+        <article class="activity__card">
+          <section class="activity__card-text">
+            <p class="activity__category">Activities</p>
+            <h2 class="activity__title">Active rest</h2>
+          </section>
           <img src="assets/02.jpg" alt="Active rest" class="activity__image" />
-        </card>
-        <card class="activity">
-          <p class="activity__category">Activities</p>
-          <h2 class="activity__title">Game walks</h2>
+        </article>
+        <article class="activity__card">
+          <section class="activity__card-text">
+            <p class="activity__category">Activities</p>
+            <h2 class="activity__title">Game walks</h2>
+          </section>
           <img src="assets/03.jpg" alt="Game walks" class="activity__image" />
-        </card>
-      </section>
+        </article>
+      </div>
     </main>
   </body>
 </html>
